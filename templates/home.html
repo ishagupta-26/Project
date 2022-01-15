@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block body %}
+<body style="background-color:rgb(18, 18, 54) ;"></body> 
+  
+  <div class="bd-example" align="middle">
+<img src="{{url_for('static',filename='cse3.jpeg')}}" width="1000" height="400"  />
+  <div style="background-color: rgb(red, green, blue) ;" ; class="jumbotron text-center">
+    <h1 style="color:red ; font-family:'Times New Roman', Times, serif;" ><b>Welcome to CSE Department</b></h1>
+    <p class="lead"; style="color: black;font-size: xx-large; " ><b>Tech with the knowledge plus need leads to a change everyone loves.</b></p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+   
+    {% endif %}
+  </div>
+{% endblock %}

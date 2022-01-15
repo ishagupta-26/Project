@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<style>
+  .container{
+    text-align: center;
+  }
+</style>
+<body style="background-color: rgb(18, 18, 54)  ; " ></body> 
+  <h1 style="text-align: center; font-family: cursive ; color: whitesmoke;"><b>About Us </b></h1><br>
+  <p style="font-size:larger; text-align: justify; font-weight: 500; color: wheat;" >Welcome to the Official Website of <b>Computer Science Department of Karunya</b>. This is a student friendly portal and claims to provide what you are asking for. This is a gateway to all your Problems, Queries and Ideas. Feel free to explore and figure out what your mind asks for. So what are you waiting for? Jump in the Bandwagon! You get an opportunity to publish your ideas and write down whatever is there in your mind and along with that we have provided the chatbot where you can actually talk to the bot and make youself feel good and fresh. So, hurry up and Publish your First Article and show how much talent you got.    </p>
+  <br>
+  <div class="container" ><img src="{{url_for('static',filename='hod.jpeg')}}" width="200" height="200"  /></div>
+  <div style="text-align: center; color: wheat;  "> &ensp; &ensp; Dr. J. Immanuel Johnraja, HOD</div>
+  <br>
+  <div style="color: white; text-align: justify;"  >Dr. J. Immanuel Johnraja, M.E., Ph.D is a professor and the Head of the Department of Computer Science and Engineering. He has been the HOD of the department for many consecutive years. He completed his B.E degree from Manonmaniam Sundaranar University in the year 2003 and M.E from Anna University in the year 2005. He pursued and completed his Ph.D from Karunya Institute of Technology and Sciences in the year 2017.  Dr. J. Immanuel Johnraja is an expert in the field of Computer Networks, Cryptography and Network Security. He has published many papers in collaboration with other faculties. He is also an instructor in the Cisco Certified Network Professional. Moreover, he has been awarded Advanced Instructor Excellence by Cisco Networking Academy. 
+    
+    His extremely friendly and down to earth nature has made all students develop a close bond with him. He is undoubtedly one of the most loved faculties on campus. He is a skilled Professor whose teachings and motivational speeches have had a huge impact on students. His engaging personality and teaching style grabs the attention of all students throughout his lectures. He always encourages students to participate in various events. Students look upto the passion he has for his subject.</div>
+{% endblock %}
+  
